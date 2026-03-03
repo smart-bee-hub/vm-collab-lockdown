@@ -1,5 +1,4 @@
 # vm-collab-lockdown
-** Shitty little script created because of annoying trolls on collabVM. **
 This script was created Because some guy kept joining the debian collabVM virtual machine, messing with the resolution, and then rebooting just to be disruptive.
 # what is does
 - It sets the screen res to 1360x768;
