@@ -7,5 +7,5 @@ This script was created Because some guy kept joining the debian collabVM virtua
 - It disables the log out screen app by changing its permissions to 000.
 # Running instructions
 - First, why exactly would anyone else but me want to run this?
-- run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.
+- run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)
 - Execute the script by running ```$ sudo ./Lockdown.sh```
