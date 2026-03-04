@@ -5,7 +5,7 @@ This script was created Because some guy kept joining the debian collabVM virtua
 - It disables the ability to turn off and reboot the machine by running /usr/bin/xfce4-session-logout by changing its permissions to 000.
 - It disables the ability to change the screen geometry and dpi scaling by running /usr/bin/xfce4-display-settings by changing its permissions to 000.
 - Adds an echo command in the .bashrc of the dartz user mentionning information about this script.
-- their utilities can be restored by running ```$ sudo chmod 755 /usr/bin/xfce4-session-logout /usr/bin/xfce4-display-settings.
+- their utilities can be restored by running ```$ sudo chmod 755 /usr/bin/xfce4-session-logout /usr/bin/xfce4-display-settings.```
 # Running instructions
 - First, why exactly would anyone else but me want to run this?
 - Clone the repo by running ```$ git clone https://github.com/smart-bee-hub/vm-collab-lockdown.git```
