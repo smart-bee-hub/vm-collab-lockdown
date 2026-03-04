@@ -7,5 +7,5 @@ This script was created Because some guy kept joining the debian collabVM virtua
 - their utility can be restored by running ```$ sudo chmod 700 /usr/bin/xfce4-session-logout /usr/bin/xfce4-display-settings.
 # Running instructions
 - First, why exactly would anyone else but me want to run this?
-- run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)
+- run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)```
 - Execute the script by running ```$ sudo bash ./Lockdown.sh```
