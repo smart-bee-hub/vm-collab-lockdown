@@ -30,7 +30,8 @@ echo "Access to them)"
 echo "which are located at /usr/bin/xfce4-display-settings and /usr/bin/xfce4-session-logout."
 echo "Rebooting and changing the display settings through the terminal are unaffected. Contact me on Discord"
 echo "@beezled for any questions."
-echo "Code available at https://github.com/smart-bee-hub/vm-collab-lockdown/"
+echo "Information on the script available at"
+echo "https://github.com/smart-bee-hub/vm-collab-lockdown/"
 
 EOF
 
