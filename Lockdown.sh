@@ -14,7 +14,7 @@ MONITOR=$(xrandr | grep " connected" | cut -f1 -d" ")
 xrandr --output "$MONITOR" --mode 1360x768
 sleep 2
 
-# 2. Neutralize Xfce Settings and Session Binaries for non root users
+# 2. Neutralize Xfce Settings and Session Binaries for everyone, which is reversible
 # This prevents the GUI from launching display sttings settings or the logout/reboot/shutdown dialog
 # Note: This does NOT stop the user from 'sudo reboot' or 'sudo poweroff' from a terminal
 chmod 000 /usr/bin/xfce4-display-settings
