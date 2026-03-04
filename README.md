@@ -7,7 +7,9 @@ This script was created Because some guy kept joining the debian collabVM virtua
 - their utility can be restored by running ```$ sudo chmod 700 /usr/bin/xfce4-session-logout /usr/bin/xfce4-display-settings.
 # Running instructions
 - First, why exactly would anyone else but me want to run this?
-- run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)
+- Clone the repo by running ```$ git clone https://github.com/smart-bee-hub/vm-collab-lockdown.git```
+- Cd into the cloned repo ```$ cd vm-collab-lockdown/```
+- Run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)
 - Execute the script by running ```$ sudo bash ./Lockdown.sh```
 # Clarifications 
 - This is made only for use on the vm3 virtual machine on CollabVM, meaning it assumes that your Desktop Environment is XFCE and that your username is 'dartz'.
