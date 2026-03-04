@@ -9,3 +9,6 @@ This script was created Because some guy kept joining the debian collabVM virtua
 - First, why exactly would anyone else but me want to run this?
 - run ```$ chmod +x ./Lockdown.sh``` (assuming you are in the same directory as the script.)
 - Execute the script by running ```$ sudo bash ./Lockdown.sh```
+# Clarifications 
+- This is made only for use on the vm3 virtual machine on CollabVM, meaning it assumes that your Desktop Environment is XFCE and that your username is 'dartz'.
+- This is not made to be intrusive, changes can be reversed on the machine by simply changing the permissions of the affected binaries to be able to be ran by non root users, and by changing the .bashrc, i don't care enough to provide an uninstallation script at the momment, perhaps in the future, or you can make one yourself and do a pull request.
