@@ -14,14 +14,22 @@ MONITOR=$(xrandr | grep " connected" | cut -f1 -d" ")
 xrandr --output "$MONITOR" --mode 1360x768
 sleep 2
 
-# 2. Neutralize Xfce Settings and Session Binaries
-# This prevents the GUI from launching display sttings settings or the logout/reboot/shutdown dialog.
-# Note: This does NOT stop 'sudo reboot' from a terminal.
-chmod 000 /usr/bin/xfce4-display-settings
-chmod 000 /usr/bin/xfce4-session-logout
+# 2. Neutralize Xfce Settings and Session Binaries for non root users
+# This prevents the GUI from launching display sttings settings or the logout/reboot/shutdown dialog
+# Note: This does NOT stop the user from 'sudo reboot' or 'sudo poweroff' from a terminal
+chmod 700 /usr/bin/xfce4-display-settings
+chmod 700 /usr/bin/xfce4-session-logout
 
-# 3. Explain how to turn off and reboot the machine through the terminal
-echo 'echo "A little script was ran by beezled, which is supposed to stop people from purposefully creating disturbances via the display settings and the log out screen. Using the gui display settings and the session log out apps will not be available unless you change the permissions of the xfce4-display-settings and xfce4-session-logout binaries that are in /usr/bin/. Rebooting and changing the display settings through the terminal are unaffected. contact me on discord for any question"' >> /home/dartz/.bashrc 
+#3. notify the users about the script
+cat << 'EOF' >> /home/dartz/.bashrc
+
+echo "A user named beezled ran a script to stop people from creating chaos through power and display settings."
+echo "Using the GUI display settings and the session log out apps will not be possible unless you run the binaries as root"
+echo "After having changed their permissions to 700"
+echo "which are located at /usr/bin/xfce4-display-settings and /usr/bin/xfce4-session-logout."
+echo "Rebooting and changing the display settings through the terminal are unaffected. Contact me on Discord"
+echo "@beezled for any questions."
+EOF
 
 echo "screen Settings and Logout disabled. Terminal power commands remain functional."
 
